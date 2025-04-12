@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  margin: 10px;
+  width: 700px;
+}
+input,
+textarea,
+label,
+select {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+}
+
+header {
+  background-color: #006491;
+  height: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.horizontal label {
+  font-weight: lighter;
+}
+
+/*Adicional*/
+.titulo {
+  margin: 8px 0px 2px 0px;
+  display: inline-block;
+}
+
+form {
+  width: 100%;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/*Tamaño del header*/
+header {
+  height: 55px;
+}
+
+/*Contenido del header
+Tamaño maximo
+centrar contenido
+*/
+#header-content {
+  height: 100%;
+  width: 680px;
+  justify-content: space-between;
+}
+
+/*
+flex center
+*/
+.center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*height:100%*/
+.height100 {
+  height: 100%;
+}
+
+#header-content-right-login {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+header li,
+header ul,
+header a,
+header nav {
+  height: 100%;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  display: flex;
+  align-items: center; /* Centra verticalmente el texto */
+}
+
+header li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Centra verticalmente el texto */
+  justify-content: center; /* Centra horizontalmente el texto */
+  padding: 0px 5px;
+  height: 100%; /* Asegura que ocupe todo el alto del header */
+  transition: background-color 0.3s ease;
+}
+
+/*font style header*/
+header a,
+header p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/*hover*/
+header li a:hover,
+#header-content-right-login {
+  background-color: #145471; /* Azul más oscuro */
+}
+
+/*logo*/
+#logo {
+  height: 32px;
+}
+
+/*other images*/
+header img {
+  height: 22px;
+  margin-right: 10px;
+}

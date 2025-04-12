@@ -1,0 +1,111 @@
+body {
+  background-color: #202020;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.music-card {
+  width: 470px;
+  padding: 10px;
+  margin: 5px 15px;
+  border-radius: 10px;
+  background-color: #202020;
+}
+
+.music-card img {
+  border-radius: 20px;
+}
+
+.music-card-text {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.music-card-info {
+  flex-direction: column;
+  width: 100%;
+}
+
+.music-card button {
+  margin: 5px;
+}
+
+.music-card-buttons {
+  justify-content: end;
+}
+
+.negrilla {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#song-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+#playlist-container-left {
+  min-width: 50%;
+}
+#playlist-container-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.bigger-text {
+  font-size: 20px;
+}
+
+.music-card:hover {
+  background: gray;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2,
+p,
+span {
+  color: white;
+}
+
+.final,
+.siguiente {
+  background-color: #1dd05d;
+  border-color: #1dd05d;
+}
+
+.final:hover,
+.siguiente:hover {
+  background-color: #1df368;
+  border-color: #1dd05d;
+}
+
+#playlist-title {
+  margin: 10px;
+}
+
+ol p {
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMINOS</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="center">
+      <div id="header-content" class="horizontal">
+        <nav class="center">
+          <ul class="center">
+            <li>
+              <img src="./images/logoDominoes.png" id="logo" />
+            </li>
+            <li><a href="#">PIDE EN LINEA</a></li>
+            <li><a href="#">MENÚ</a></li>
+            <li><a href="#">TIENDAS</a></li>
+            <li><a href="#">SIGUE TU PEDIDO</a></li>
+            <li><a href="#">PROMOS</a></li>
+          </ul>
+        </nav>
+        <div id="header-content-right" class="center height100">
+          <div id="header-content-right-login" class="center height100">
+            <img src="./images/user.png" />
+            <p>INICIAR SESION</p>
+          </div>
+          <img src="./images/shopping-cart.png" />
+        </div>
+      </div>
+    </header>
+
+    <form class="center">
+      <fieldset>
+        <legend>Realiza tu pedido</legend>
+        <label for="txtNombre" class="titulo">Nombre</label>
+        <input type="text" placeholder="Nombre" name="nombree" id="txtNombre" />
+
+        <label for="txtNumero" class="titulo">Número</label>
+        <input
+          type="number"
+          placeholder="Numero"
+          name="numero"
+          id="txtNumero"
+        />
+
+        <label for="selectCiudad" class="titulo">Ciudad</label>
+        <input list="selectCiudad" name="ciudad" />
+
+        <datalist id="selectCiudad">
+          <option value="Bogota"></option>
+          <option value="Cali"></option>
+          <option value="Md">Medellin</option>
+        </datalist>
+
+        <label for="selectPizza" class="titulo">Sabor</label>
+
+        <select name="pizza" id="selectPizza">
+          <option value="Muzzarella">Mozzarella</option>
+          <option value="Napolitana">Napolitana</option>
+          <option value="Calabresa">Calabresa</option>
+        </select>
+
+        <strong class="titulo">Seleccione su postre</strong>
+        <div class="horizontal">
+          <label for="chocolate">Chocolate</label>
+          <input type="radio" name="postre" value="chocolate" id="chocolate" />
+
+          <label for="vainilla">Vainilla</label>
+          <input type="radio" name="postre" value="vainilla" id="vainilla" />
+
+          <label for="frutilla">Frutilla</label>
+          <input type="radio" name="postre" value="frutilla" id="frutilla" />
+        </div>
+
+        <strong class="titulo">Adicionales</strong><br />
+        <div class="horizontal">
+          <label for="salsa">Salsa</label>
+          <input type="checkbox" name="salsa" id="salsa" value="yes" />
+
+          <label for="queso">Queso</label>
+          <input type="checkbox" name="queso" id="queso" value="yes" />
+
+          <label for="jamon">Jamon</label>
+          <input type="checkbox" name="jamon" id="jamon" value="yes" />
+        </div>
+
+        <label for="txtComentarios" class="titulo">Comentarios</label>
+        <textarea
+          name="comentarios"
+          id="txtComentarios"
+          cols="80"
+          rows="10"
+        ></textarea>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
